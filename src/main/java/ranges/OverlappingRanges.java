@@ -63,7 +63,7 @@ public class OverlappingRanges {
     }
 
     private static boolean inRange(int n, int a, int b) {
-	    return (n >= a) && (n <= b);
+	    return ((n > a) && (n <= b)) || ((n >= a) && (n < b));
     }
 
 }
